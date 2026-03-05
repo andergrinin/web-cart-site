@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Покупки</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Товари</h1>
+    <a href="cart.html">До корзини</a>
+    <div class="filter-sort">
+      <select id="category-filter" onchange="filterProducts()">
+        <option value="all">Всі категорії</option>
+        <option value="PC">ПК</option>
+        <option value="laptop">Ноутбук</option>
+        <option value="phone">Телефон</option>
+      </select>
+      <div class="sort-buttons">
+        <button onclick="sortProducts('asc')">Сортування за ціною: Зростання</button>
+        <button onclick="sortProducts('desc')">Сортування за ціною: Спадання</button>
+      </div>
+    </div>
+    <div id="product-list" class="product-list">
+      <!-- Список продуктів -->
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
